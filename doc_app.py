@@ -28,7 +28,7 @@ def read_file(filename: str):
             text = rtf_to_text(content)
     else:
         return {"text": []}
-    return {"text": text}
+    return text#{"text": text}
 
 
 def reinterpret(text: str):
@@ -42,21 +42,29 @@ def remove_convert_info(text: str):
     return text[i + 6:]
 
 
-with gr.Blocks() as demo:
-    gr.Interface(read_file, "file", "json")
 
 
 def classifier(text):
+    text  = read_file("hacka-aka-embedika/docs/0b4be82b86eff410d69d1d6b5553d220.docx")
     model = joblib.load('model_v0_1.joblib')
     vectorizer = joblib.load('vectorizer_v0_1.joblib')
     cls = {0: "Договоры поставки", 1: "Договоры оказания услуг", 2: "Договоры подряда", 3: "Договоры аренды", 4: "Договоры купли-продажи"}
-    vec = vectorizer.transform(text)
-    print(vec)
-    return {"label": cls[model.predict(vec.reshape(1, -1))]}
+    classes = ["Договоры поставки", "Договоры оказания услуг", "Договоры подряда", "Договоры аренды", "Договоры купли-продажи"]
+    vec = vectorizer.transform([text])
+    # output = {"Договоры поставки": 0, "Договоры оказания услуг": 0, "Договоры подряда": 0, "Договоры аренды": 0, "Договоры купли-продажи": 0}
+    cls[model.predict(vec)[0]]
+    # for idx, c in cls.items():
+    #     output
+    proba = model.predict_proba(vec)[0]
+    out = {}
+    for c, val in zip(classes, proba):
+        out[c] = val
+    return out
 
 
 
 def interpretation_function(text):
+    text  = read_file("hacka-aka-embedika/docs/0b4be82b86eff410d69d1d6b5553d220.docx")
     explainer = shap.Explainer(classifier)
     shap_values = explainer([text])
 
@@ -74,6 +82,8 @@ with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column():
             file = gr.File(label="Input File")
+            # # with gr.Blocks() as demo:
+            # file = gr.Interface(file, "file", "json")
             with gr.Row():
                 classify = gr.Button("Classify document")
                 interpret = gr.Button("Interpret")
