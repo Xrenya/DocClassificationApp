@@ -1,6 +1,6 @@
 ## Russian document classification application
 
-## Interface:
+## Application UI:
 ![image](https://user-images.githubusercontent.com/51479797/207982633-5b59cf2b-92f4-4a5f-85a1-2d9f51d9fd49.png)
 
 
