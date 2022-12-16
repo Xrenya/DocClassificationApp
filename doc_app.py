@@ -10,7 +10,10 @@ import json
 import shap
 
 
-def read_file(filename: str):
+def read_file(file_obj):
+    if isinstance(file_obj, list):
+        file_obj = file_obj[0]
+    filename = file_obj.name
     if filename.endswith("docx"):
         text = docx2txt.process(filename)
     elif filename.endswith("pdf"):
@@ -44,8 +47,8 @@ def remove_convert_info(text: str):
 
 
 
-def classifier(text):
-    text  = read_file("hacka-aka-embedika/docs/0b4be82b86eff410d69d1d6b5553d220.docx")
+def classifier(file_obj):
+    text  = read_file(file_obj)
     model = joblib.load('model_v0_1.joblib')
     vectorizer = joblib.load('vectorizer_v0_1.joblib')
     cls = {0: "Договоры поставки", 1: "Договоры оказания услуг", 2: "Договоры подряда", 3: "Договоры аренды", 4: "Договоры купли-продажи"}
@@ -63,8 +66,8 @@ def classifier(text):
 
 
 
-def interpretation_function(text):
-    text  = read_file("hacka-aka-embedika/docs/0b4be82b86eff410d69d1d6b5553d220.docx")
+def interpretation_function(file_obj):
+    text  = read_file(file_obj)
     explainer = shap.Explainer(classifier)
     shap_values = explainer([text])
 
