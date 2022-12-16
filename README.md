@@ -22,6 +22,8 @@
     - Allow upload user files
     - Visualize predicted label
     - Visualzie model explainability of its prediction.
+4. Model analysis using eli5:
+    - Identified keywords which model using to classify documents, only '1' and '2' classes have bias as a top feature, which probably should be tackles on the next stage. 
     
 #### Model metrics on test dataset (20%):
 |Metrics        |      |
