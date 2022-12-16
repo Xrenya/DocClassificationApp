@@ -22,6 +22,14 @@
     - Allow upload user files
     - Visualize predicted label
     - Visualzie model explainability of its prediction.
+    
+#### Model metrics on test dataset (20%):
+|Metrics        |      |
+|---------------|------|
+|accuracy_score |0.9583|
+|precision_score|0.9583|
+|f1_score       |0.9583|
+|recall_score   |0.9583|
 
 ## TODO:
 1. - [X] Make a UI page using gradio with SHAP
