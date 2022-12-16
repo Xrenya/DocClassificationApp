@@ -25,8 +25,7 @@
 4. Model analysis using eli5:
     - Identified keywords which model using to classify documents, only '1' and '2' classes have bias as a top feature, which probably should be tackles on the next stage. 
 5. Need to add text highlights:  
-
-[image](https://user-images.githubusercontent.com/51479797/208134087-719b8eb9-077e-4b54-ba15-d569f65a2370.png)
+![image](https://user-images.githubusercontent.com/51479797/208134087-719b8eb9-077e-4b54-ba15-d569f65a2370.png)
 
     
 #### Model metrics on test dataset (20%):
