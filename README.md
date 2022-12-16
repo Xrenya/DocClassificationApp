@@ -6,7 +6,7 @@
 #### UI for prediction
 ![image](https://user-images.githubusercontent.com/51479797/207985762-e46ce031-bb2f-4480-9e0b-7cd62113b2bf.png)
 #### Example UI explainablity:
-.. Pending
+![image](https://user-images.githubusercontent.com/51479797/208134217-53c79844-1743-4489-acd6-95252b14674b.png)
 
 ## Progress:
 #### Developed:
@@ -24,6 +24,9 @@
     - Visualzie model explainability of its prediction.
 4. Model analysis using eli5:
     - Identified keywords which model using to classify documents, only '1' and '2' classes have bias as a top feature, which probably should be tackles on the next stage. 
+5. Need to add text highlights:
+[image](https://user-images.githubusercontent.com/51479797/208134087-719b8eb9-077e-4b54-ba15-d569f65a2370.png)
+
     
 #### Model metrics on test dataset (20%):
 |Metrics        |      |
