@@ -9,7 +9,7 @@
 .. Pending
 
 ## Progress:
-
+#### Developed:
 1. Supported files extensions:
     - pdf
     - rtf
