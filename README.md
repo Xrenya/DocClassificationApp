@@ -1,9 +1,12 @@
 ## Russian document classification application
 
 ## Application UI:
+#### Simple user interface
 ![image](https://user-images.githubusercontent.com/51479797/207982633-5b59cf2b-92f4-4a5f-85a1-2d9f51d9fd49.png)
-
+#### UI for prediction
 ![image](https://user-images.githubusercontent.com/51479797/207985762-e46ce031-bb2f-4480-9e0b-7cd62113b2bf.png)
+#### Example UI explainablity:
+.. Pending
 
 ## Progress:
 
