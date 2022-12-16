@@ -5,6 +5,20 @@
 
 ![image](https://user-images.githubusercontent.com/51479797/207985762-e46ce031-bb2f-4480-9e0b-7cd62113b2bf.png)
 
+## Progress:
+
+1. Supported files extensions:
+    - pdf
+    - rtf
+    - doc
+    - docx
+2. Inference:
+    - Prediction label
+    - Model explainablity: words weights/attention
+3. UI:
+    - Allow upload user files
+    - Visualize predicted label
+    - Visualzie model explainability of its prediction.
 
 ## TODO:
 1. - [X] Make a UI page using gradio with SHAP
