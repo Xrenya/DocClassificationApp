@@ -24,6 +24,11 @@ In order to share the project you have to set up: ```demo.launch(share=True)```
 ![image](https://user-images.githubusercontent.com/51479797/208237977-14a352d0-3e72-488d-a8e5-1e30cbad390a.png)
 
 
+## Reports:
+1. RuBert model: report_bert.ipynb
+2. BoW model: report_v3.ipynb
+
+
 ## Progress:
 #### Developed:
 1. Supported files extensions:
