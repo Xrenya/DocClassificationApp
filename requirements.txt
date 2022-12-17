@@ -1,0 +1,24 @@
+natasha
+scikit-learn
+nltk
+matplotlib
+numpy
+pandas
+seaborn
+eli5
+gradio
+jupyter
+isort
+yapf
+transformers
+altair
+torch torchvision torchaudio
+shap
+PyMuPDF
+fitz
+textract
+docx2txt
+antiword
+striprtf
+scipy
+lime
