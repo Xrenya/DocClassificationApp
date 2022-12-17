@@ -1,0 +1,19 @@
+{
+  "cls_token": "[CLS]",
+  "do_basic_tokenize": true,
+  "do_lower_case": false,
+  "mask_token": "[MASK]",
+  "use_fast": true,
+  "model_max_length": 512,
+  "padding_side": "right",
+  "truncation_side": "left",
+  "name_or_path": "DeepPavlov/rubert-base-cased-sentence",
+  "never_split": null,
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]",
+  "special_tokens_map_file": "/home/xrenya/.cache/huggingface/hub/models--DeepPavlov--rubert-base-cased-sentence/snapshots/78b5122d6365337dd4114281b0d08cd1edbb3bc8/special_tokens_map.json",
+  "strip_accents": null,
+  "tokenize_chinese_chars": true,
+  "tokenizer_class": "BertTokenizer",
+  "unk_token": "[UNK]"
+}
