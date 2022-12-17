@@ -1,5 +1,18 @@
 ## Russian document classification application
 
+## Installation
+```
+pip install -r requirements.txt
+```
+> :warning: **transformer** library has some issue with truncate features when using **pipeline**, if you could not run the model and getting error due to exceding number of tokens pass (> 512), you have change it manually in the libary's file (specifically, in ```self.vectorizer```) to truncate: ```truncate=True, model_max_length=512```
+## 
+
+## Usage:
+```
+python app.py
+```
+In order to share the project you have to set up: ```demo.launch(share=True)```
+
 ## Application UI:
 #### Simple user interface
 ![image](https://user-images.githubusercontent.com/51479797/207982633-5b59cf2b-92f4-4a5f-85a1-2d9f51d9fd49.png)
