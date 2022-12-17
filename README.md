@@ -8,7 +8,7 @@
 #### Example UI explainablity:
 ![image](https://user-images.githubusercontent.com/51479797/208134217-53c79844-1743-4489-acd6-95252b14674b.png)
 #### Final UI
-![image](https://user-images.githubusercontent.com/51479797/208227961-0d6ff870-0ae2-42c1-85d0-797b2e6d582c.png)
+![image](https://user-images.githubusercontent.com/51479797/208228823-460a8d01-8b08-4216-b369-068d2dd35242.png)
 
 
 ## Progress:
