@@ -13,6 +13,10 @@ python app.py
 ```
 In order to share the project you have to set up: ```demo.launch(share=True)```
 
+## Reports:
+1. RuBert model: report_bert.ipynb
+2. BoW model: report_v3.ipynb
+
 ## Application UI:
 #### Simple user interface
 ![image](https://user-images.githubusercontent.com/51479797/207982633-5b59cf2b-92f4-4a5f-85a1-2d9f51d9fd49.png)
@@ -22,11 +26,6 @@ In order to share the project you have to set up: ```demo.launch(share=True)```
 ![image](https://user-images.githubusercontent.com/51479797/208134217-53c79844-1743-4489-acd6-95252b14674b.png)
 #### Final UI
 ![image](https://user-images.githubusercontent.com/51479797/208237977-14a352d0-3e72-488d-a8e5-1e30cbad390a.png)
-
-
-## Reports:
-1. RuBert model: report_bert.ipynb
-2. BoW model: report_v3.ipynb
 
 
 ## Progress:
