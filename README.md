@@ -27,8 +27,8 @@
     - Visualzie model explainability of its prediction.
 4. Model analysis using eli5:
     - Identified keywords which model using to classify documents, only '1' and '2' classes have bias as a top feature, which probably should be tackles on the next stage. 
-5. Need to add text highlights:  
-![image](https://user-images.githubusercontent.com/51479797/208134087-719b8eb9-077e-4b54-ba15-d569f65a2370.png)
+5. SHAP words highlight based on bert output:  
+![image](https://user-images.githubusercontent.com/51479797/208228018-fa495161-dfb2-487c-9abb-8a99bc29f899.png)
 
     
 #### Model metrics on test dataset (20%):
@@ -45,5 +45,5 @@
 2. - [X] Unify documents: accept doc/docx to transform into pdf and process pdf file  
     - Solution: [doc2pdf](https://stackoverflow.com/questions/6011115/doc-to-pdf-using-python), [docx2pdf](https://ysko909.github.io/posts/docx-convert-to-pdf-with-python/)
 3. - [X] Train two simple model (Bag-of-words, Tf-Idf), text preprocessing 
-4. - [ ] Fune-tune RuBert model
-5. - [ ] Make a presentation
+4. - [X] Fune-tune RuBert model
+5. - [X] Make a presentation
