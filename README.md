@@ -21,7 +21,7 @@ In order to share the project you have to set up: ```demo.launch(share=True)```
 #### Example UI explainablity:
 ![image](https://user-images.githubusercontent.com/51479797/208134217-53c79844-1743-4489-acd6-95252b14674b.png)
 #### Final UI
-![image](https://user-images.githubusercontent.com/51479797/208228823-460a8d01-8b08-4216-b369-068d2dd35242.png)
+![image](https://user-images.githubusercontent.com/51479797/208237977-14a352d0-3e72-488d-a8e5-1e30cbad390a.png)
 
 
 ## Progress:
